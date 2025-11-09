@@ -1,0 +1,89 @@
+.ai-insights {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.insights-loading {
+  text-align: center;
+  padding: 40px 20px;
+  color: #999;
+  font-style: italic;
+}
+
+.insight-section {
+  display: flex;
+  gap: 15px;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  border-left: 4px solid #667eea;
+}
+
+.insight-section.warning {
+  background: #fff3cd;
+  border-left-color: #f39c12;
+}
+
+.insight-section.recommendation {
+  background: #d1ecf1;
+  border-left-color: #17a2b8;
+}
+
+.insight-icon {
+  font-size: 32px;
+  flex-shrink: 0;
+}
+
+.insight-content {
+  flex: 1;
+}
+
+.insight-content h3 {
+  margin: 0 0 10px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.insight-content p {
+  margin: 0;
+  color: #555;
+  line-height: 1.6;
+}
+
+.insight-content ul {
+  margin: 0;
+  padding-left: 20px;
+  color: #555;
+}
+
+.insight-content li {
+  margin-bottom: 5px;
+}
+
+.categories-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.category-badge {
+  padding: 6px 12px;
+  background: white;
+  border: 2px solid #667eea;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #667eea;
+}
+
+@media (max-width: 768px) {
+  .insight-section {
+    padding: 15px;
+  }
+  
+  .insight-icon {
+    font-size: 28px;
+  }
+}

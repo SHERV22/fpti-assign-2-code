@@ -1,0 +1,107 @@
+.budget-overview {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.budget-empty {
+  text-align: center;
+  padding: 40px 20px;
+  color: #999;
+}
+
+.budget-hint {
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.budget-summary {
+  padding: 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 12px;
+  color: white;
+}
+
+.budget-total {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.budget-label {
+  font-size: 14px;
+  opacity: 0.9;
+  margin-bottom: 8px;
+}
+
+.budget-amount {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.budget-of {
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+.budget-progress-main {
+  height: 12px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.budget-progress-bar {
+  height: 100%;
+  background: white;
+  border-radius: 6px;
+  transition: width 0.3s ease;
+}
+
+.budget-categories h3 {
+  margin: 0 0 15px 0;
+  font-size: 16px;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.budget-category {
+  margin-bottom: 20px;
+}
+
+.category-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.category-name {
+  font-weight: 600;
+  color: #333;
+}
+
+.category-amount {
+  font-size: 14px;
+  color: #666;
+}
+
+.category-progress {
+  height: 8px;
+  background: #e1e8ed;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.category-progress-bar {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .budget-amount {
+    font-size: 28px;
+  }
+}
