@@ -77,7 +77,7 @@ const Profile = () => {
         <div className="profile-card">
           <h2>Financial Settings</h2>
           <div className="form-group">
-            <label>Monthly Income ($)</label>
+            <label>Monthly Income (₹)</label>
             <input
               type="number"
               value={monthlyIncome}
