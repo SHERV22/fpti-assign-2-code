@@ -54,8 +54,8 @@ const BudgetOverview = ({ budget, transactions, userProfile }) => {
       <div className="budget-summary">
         <div className="budget-total">
           <div className="budget-label">Spent This Month</div>
-          <div className="budget-amount">${totalSpent.toFixed(2)}</div>
-          <div className="budget-of">of ${totalBudget.toFixed(2)}</div>
+          <div className="budget-amount">₹{totalSpent.toFixed(2)}</div>
+          <div className="budget-of">of ₹{totalBudget.toFixed(2)}</div>
         </div>
         <div className="budget-progress-main">
           <div 
