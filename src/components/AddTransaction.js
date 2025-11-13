@@ -75,7 +75,7 @@ const AddTransaction = ({ userId, onClose, onAdd }) => {
           </div>
 
           <div className="form-group">
-            <label>Amount ($)</label>
+            <label>Amount (₹)</label>
             <input
               type="number"
               name="amount"
