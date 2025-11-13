@@ -16,7 +16,7 @@ export const analyzeSpendingPatterns = async (transactions, userProfile) => {
 You are a financial advisor analyzing a user's spending patterns.
 
 User Profile:
-- Monthly Income: $${userProfile.monthlyIncome || 0}
+- Monthly Income: ₹${userProfile.monthlyIncome || 0}
 - Currency: ${userProfile.currency || 'USD'}
 
 Transaction Summary (Last 30 days):
@@ -78,7 +78,7 @@ export const generateBudgetRecommendations = async (transactions, userProfile, c
 You are a financial advisor creating a personalized budget plan.
 
 User Profile:
-- Monthly Income: $${userProfile.monthlyIncome || 0}
+- Monthly Income: ₹${userProfile.monthlyIncome || 0}
 
 ${currentBudgetInfo}
 
@@ -143,7 +143,7 @@ export const detectOverspending = async (transactions, budget, userProfile) => {
     const prompt = `
 You are monitoring a user's spending for potential overspending alerts.
 
-Monthly Income: $${userProfile.monthlyIncome || 0}
+Monthly Income: ₹${userProfile.monthlyIncome || 0}
 
 Budget Limits:
 ${JSON.stringify(budget.categories, null, 2)}
@@ -202,8 +202,8 @@ export const generateMonthlySummary = async (transactions, budget, userProfile) 
     const prompt = `
 Create a friendly monthly spending summary for a user.
 
-Monthly Income: $${userProfile.monthlyIncome || 0}
-Total Spent: $${totalSpent.toFixed(2)}
+Monthly Income: ₹${userProfile.monthlyIncome || 0}
+Total Spent: ₹${totalSpent.toFixed(2)}
 
 Spending by Category:
 ${JSON.stringify(categorySpending, null, 2)}
@@ -239,7 +239,7 @@ export const suggestBudgetAdjustments = async (lifeChange, currentBudget, userPr
     const prompt = `
 A user experienced a life change: "${lifeChange}"
 
-Current Monthly Income: $${userProfile.monthlyIncome || 0}
+Current Monthly Income: ₹${userProfile.monthlyIncome || 0}
 
 Current Budget:
 ${JSON.stringify(currentBudget.categories, null, 2)}
@@ -280,9 +280,9 @@ function prepareTransactionSummary(transactions) {
   const categoryTotals = calculateCategorySpending(transactions);
   const total = Object.values(categoryTotals).reduce((sum, amount) => sum + amount, 0);
   
-  let summary = `Total Spent: $${total.toFixed(2)}\n\nBy Category:\n`;
+  let summary = `Total Spent: ₹${total.toFixed(2)}\n\nBy Category:\n`;
   for (const [category, amount] of Object.entries(categoryTotals)) {
-    summary += `- ${category}: $${amount.toFixed(2)}\n`;
+    summary += `- ${category}: ₹${amount.toFixed(2)}\n`;
   }
   
   return summary;
