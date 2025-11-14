@@ -175,7 +175,7 @@ const BudgetManager = () => {
       <div className="budget-content">
         <div className="budget-summary-box">
           <h3>Total Monthly Budget</h3>
-          <div className="total-amount">${totalBudget.toFixed(2)}</div>
+          <div className="total-amount">₹{totalBudget.toFixed(2)}</div>
         </div>
 
         <div className="categories-grid">
@@ -183,7 +183,7 @@ const BudgetManager = () => {
             <div key={category} className="category-input-card">
               <label>{category}</label>
               <div className="input-wrapper">
-                <span className="currency">$</span>
+                <span className="currency">₹</span>
                 <input
                   type="number"
                   value={categoryAmounts[category] || 0}

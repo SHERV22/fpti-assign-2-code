@@ -1,73 +1,76 @@
 .budget-overview {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 24px;
 }
 
 .budget-empty {
   text-align: center;
   padding: 40px 20px;
-  color: #999;
+  color: #6b7280;
 }
 
 .budget-hint {
-  font-size: 14px;
+  font-size: 13px;
   margin-top: 8px;
 }
 
 .budget-summary {
-  padding: 20px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 24px;
+  background: #111827;
   border-radius: 12px;
   color: white;
 }
 
 .budget-total {
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 }
 
 .budget-label {
-  font-size: 14px;
-  opacity: 0.9;
+  font-size: 13px;
+  opacity: 0.8;
   margin-bottom: 8px;
+  font-weight: 500;
 }
 
 .budget-amount {
-  font-size: 32px;
+  font-size: 36px;
   font-weight: 700;
   margin-bottom: 4px;
+  letter-spacing: -0.02em;
 }
 
 .budget-of {
-  font-size: 16px;
-  opacity: 0.9;
+  font-size: 14px;
+  opacity: 0.7;
 }
 
 .budget-progress-main {
-  height: 12px;
-  background: rgba(255, 255, 255, 0.3);
-  border-radius: 6px;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 4px;
   overflow: hidden;
 }
 
 .budget-progress-bar {
   height: 100%;
   background: white;
-  border-radius: 6px;
+  border-radius: 4px;
   transition: width 0.3s ease;
 }
 
 .budget-categories h3 {
-  margin: 0 0 15px 0;
-  font-size: 16px;
-  color: #666;
+  margin: 0 0 16px 0;
+  font-size: 13px;
+  color: #6b7280;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.05em;
+  font-weight: 600;
 }
 
 .budget-category {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .category-header {
@@ -78,25 +81,27 @@
 }
 
 .category-name {
-  font-weight: 600;
-  color: #333;
+  font-weight: 500;
+  color: #111827;
+  font-size: 14px;
 }
 
 .category-amount {
-  font-size: 14px;
-  color: #666;
+  font-size: 13px;
+  color: #6b7280;
+  font-weight: 500;
 }
 
 .category-progress {
-  height: 8px;
-  background: #e1e8ed;
-  border-radius: 4px;
+  height: 6px;
+  background: #f3f4f6;
+  border-radius: 3px;
   overflow: hidden;
 }
 
 .category-progress-bar {
   height: 100%;
-  border-radius: 4px;
+  border-radius: 3px;
   transition: width 0.3s ease;
 }
 

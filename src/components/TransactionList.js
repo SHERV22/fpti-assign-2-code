@@ -42,7 +42,7 @@ const TransactionList = ({ transactions, onUpdate }) => {
             </div>
           </div>
           <div className={`transaction-amount ${transaction.type}`}>
-            {transaction.type === 'income' ? '+' : '-'}${transaction.amount.toFixed(2)}
+            {transaction.type === 'income' ? '+' : '-'}₹{transaction.amount.toFixed(2)}
           </div>
         </div>
       ))}

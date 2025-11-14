@@ -1,37 +1,37 @@
 .ai-insights {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 16px;
 }
 
 .insights-loading {
   text-align: center;
   padding: 40px 20px;
-  color: #999;
-  font-style: italic;
+  color: #6b7280;
+  font-size: 14px;
 }
 
 .insight-section {
   display: flex;
-  gap: 15px;
-  padding: 20px;
-  background: #f8f9fa;
-  border-radius: 12px;
-  border-left: 4px solid #667eea;
+  gap: 12px;
+  padding: 16px;
+  background: #f9fafb;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
 }
 
 .insight-section.warning {
-  background: #fff3cd;
-  border-left-color: #f39c12;
+  background: #fef3c7;
+  border-color: #fbbf24;
 }
 
 .insight-section.recommendation {
-  background: #d1ecf1;
-  border-left-color: #17a2b8;
+  background: #dbeafe;
+  border-color: #3b82f6;
 }
 
 .insight-icon {
-  font-size: 32px;
+  font-size: 24px;
   flex-shrink: 0;
 }
 
@@ -40,42 +40,45 @@
 }
 
 .insight-content h3 {
-  margin: 0 0 10px 0;
-  font-size: 16px;
-  color: #333;
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  color: #111827;
+  font-weight: 600;
 }
 
 .insight-content p {
   margin: 0;
-  color: #555;
-  line-height: 1.6;
+  color: #4b5563;
+  line-height: 1.5;
+  font-size: 13px;
 }
 
 .insight-content ul {
   margin: 0;
   padding-left: 20px;
-  color: #555;
+  color: #4b5563;
+  font-size: 13px;
 }
 
 .insight-content li {
-  margin-bottom: 5px;
+  margin-bottom: 4px;
 }
 
 .categories-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 10px;
+  gap: 6px;
+  margin-top: 8px;
 }
 
 .category-badge {
-  padding: 6px 12px;
-  background: white;
-  border: 2px solid #667eea;
-  border-radius: 20px;
-  font-size: 14px;
-  font-weight: 600;
-  color: #667eea;
+  padding: 4px 10px;
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #111827;
 }
 
 @media (max-width: 768px) {
