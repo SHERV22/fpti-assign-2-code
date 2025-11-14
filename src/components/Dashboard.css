@@ -125,6 +125,7 @@
   font-weight: 500;
   font-size: 14px;
   transition: all 0.2s;
+  margin-left: 20px;
 }
 
 .btn-primary:hover {

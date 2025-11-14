@@ -79,7 +79,7 @@ const BudgetOverview = ({ budget, transactions, userProfile }) => {
               <div className="category-header">
                 <span className="category-name">{category}</span>
                 <span className="category-amount">
-                  ${spent.toFixed(0)} / ${budgetAmount.toFixed(0)}
+                  ₹{spent.toFixed(0)} / ₹{budgetAmount.toFixed(0)}
                 </span>
               </div>
               <div className="category-progress">
